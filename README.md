@@ -1,72 +1,148 @@
-# Simple React Website
+# PowerOn Solutions - React Website
 
-A basic React website built from scratch using Webpack and modern React features.
+A modern, responsive website built with React, TypeScript, Vite, and Tailwind CSS.
 
-## Features
+## 🚀 Features
 
-- React 18 with modern hooks
-- Webpack for bundling and development server
-- CSS styling with responsive design
-- Clean, semantic HTML structure
+- ⚡ **Fast Development** - Built with Vite for lightning-fast HMR
+- 🎨 **Modern UI** - Styled with Tailwind CSS for beautiful, responsive design
+- 📱 **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
+- 🧭 **Client-Side Routing** - React Router for smooth navigation
+- 💪 **TypeScript** - Type-safe code for better development experience
+- 🎯 **SEO Ready** - Optimized for search engines
 
-## Getting Started
+## 📋 Prerequisites
 
-### Prerequisites
+Before you begin, ensure you have the following installed:
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-Make sure you have Node.js and npm installed on your machine.
+## 🛠️ Installation
 
-### Installation
+1. **Clone or navigate to the project directory:**
+   ```bash
+   cd poweron-solutions
+   ```
 
-1. Clone or download this project
-2. Navigate to the project directory
-3. Install dependencies:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   or if you prefer yarn:
+   ```bash
+   yarn install
+   ```
+
+## 🏃 Running the Application
+
+### Development Mode
+
+Start the development server with hot module replacement:
 
 ```bash
-npm install
+npm run dev
 ```
 
-### Running the Development Server
+The application will automatically open in your browser at `http://localhost:3000`
 
-Start the development server:
+### Build for Production
 
-```bash
-npm start
-```
-
-The application will open in your default browser at `http://localhost:3000`.
-
-### Building for Production
-
-Create a production build:
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-The build files will be generated in the `dist` directory.
+The built files will be in the `dist` directory.
 
-## Project Structure
+### Preview Production Build
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
 
 ```
-simple-react-website/
-├── public/
-│   └── index.html          # HTML template
+poweron-solutions/
+├── public/              # Static assets
 ├── src/
-│   ├── App.js              # Main React component
-│   ├── App.css             # Component styles
-│   └── index.js            # Application entry point
-├── package.json            # Dependencies and scripts
-├── webpack.config.js       # Webpack configuration
-└── README.md               # This file
+│   ├── components/      # Reusable React components
+│   │   └── Navbar.tsx   # Navigation component
+│   ├── pages/           # Page components
+│   │   ├── Home.tsx     # Homepage
+│   │   ├── About.tsx    # About page
+│   │   ├── Services.tsx # Services page
+│   │   └── Contact.tsx  # Contact page
+│   ├── App.tsx          # Main app component with routing
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global styles with Tailwind
+├── index.html           # HTML template
+├── package.json         # Dependencies and scripts
+├── tsconfig.json        # TypeScript configuration
+├── vite.config.ts       # Vite configuration
+└── tailwind.config.js   # Tailwind CSS configuration
 ```
 
-## Technologies Used
+## 🎨 Customization
+
+### Colors
+
+The primary color scheme can be customized in `tailwind.config.js`:
+
+```javascript
+colors: {
+  primary: {
+    // Modify these values to change the color scheme
+    500: '#3b82f6',
+    600: '#2563eb',
+    // ...
+  }
+}
+```
+
+### Content
+
+- **Homepage**: Edit `src/pages/Home.tsx`
+- **About Page**: Edit `src/pages/About.tsx`
+- **Services**: Edit `src/pages/Services.tsx`
+- **Contact**: Edit `src/pages/Contact.tsx`
+- **Navigation**: Edit `src/components/Navbar.tsx`
+
+## 🔧 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint to check code quality
+
+## 📦 Technologies Used
 
 - **React 18** - UI library
-- **Webpack 5** - Module bundler
-- **Babel** - JavaScript transpiler
-- **CSS3** - Styling
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Next-generation frontend tooling
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **ESLint** - Code linting
 
-## License
+## 🌐 Browser Support
 
-MIT License
+This application supports all modern browsers:
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues and pull requests.
+
+## 📧 Contact
+
+For questions or support, please contact us at info@poweronsolutions.com
